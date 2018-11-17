@@ -4,22 +4,22 @@
 
 #define len(array) sizeof(array)/sizeof(int)
 
-#define sum(array)                              \
-        ({ double sum = 0;                      \
-           for (int i = 0; i < len(array); i++) \
-               { sum+=array[i]; }               \
-           sum;                                 \
+#define sum(array)                                              \
+        ({ double sum = 0;                                      \
+           for (int i = 0; i < len(array); i++)                 \
+               { sum+=array[i]; }                               \
+           sum;                                                 \
         })
 
-#define mean(array)                            \
-        ({ double s = sum(array);              \
-           double l = len(array);              \
-              s/l;                             \
+#define mean(array)                                             \
+        ({ double s = sum(array);                               \
+           double l = len(array);                               \
+              s/l;                                              \
         })
 
-#define print_array(array)                      \
-        ({ for (int i = 0; i < len(array); i++) \
-               {printf("%d ", array[i]);}       \
+#define print_array(array)                                      \
+        ({ for (int i = 0; i < len(array); i++)                 \
+               {printf("%d ", array[i]);}                       \
         })
 
 #define print_mean_for_(array)                                  \
