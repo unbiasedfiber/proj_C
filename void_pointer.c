@@ -3,7 +3,7 @@
 int main(){
 
   double   a   = 3.141592;
-  int      b[] = {15,25,35,45};
+  int      b = 69;
   char     c[] = "a string";
 
   // voidic pointer
